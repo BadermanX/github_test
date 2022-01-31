@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.section.siteHeader {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main {
+    padding: 2%;
+}
+
+/*nav*/
+.navBar nav {
+    margin-left: auto;
+}
+
+.navBar {
+    display: flex;
+    padding: 2em;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+ul.navContainer {
+    display: flex;
+}
+
+li.navItem {
+    display: block;
+}
+
+li.navItem a{
+    color:white; 
+    text-decoration: none;
+    padding:7.5px;
+    padding-bottom: 7.5px;
+    padding-top: 7.5px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+li.navItem a.active{
+    border-bottom: 3px solid #83d2e5
+}
+
+/*Banner*/
+.mainBanner {
+    max-width: 800px;
+    margin: auto;
+    padding: 5%;
+    padding-top: 2%;
+}
+
+.bannerTitle{
+    color:white;
+    text-transform: uppercase;
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 0.75em;
+    text-transform: uppercase;
+    font-size: 3.8em;
+}
+
+.bannerTitle::after{
+    display: block;
+    content: " ";
+    background-color: #83d2e5;
+    height: 5px;
+    width: 100%;
+}
+
+.bannerBody {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 2em;
+}
+
+/* button */
+
+.ctaButton {
+    display: inline;
+}
+
+.ctaButton a{
+    display: inline-block;
+    background-color: #83d2e5;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #112c42;
+    line-height: 46px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+/* search */
+
+p.entryCount {
+    text-align: center;
+    font-size: 2em;
+}
+
+.searchInner {
+    max-width: 500px;
+    display: flex;
+    margin: auto;
+}
+
+.searchInner input {
+    flex: 1;
+}
+
+.searchInner input, .searchInner select {
+   font-size: 20px;
+   text-transform: lowercase;
+}
+
+button.button {
+    color: #34383c;
+    background: #83d2e5;
+    border: 1px solid #aaacad;
+    font-size: 20px;
+}
+
+/* entry cards */
+
+.entryCards {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5em;
+   
+}
+
+.entryCardInner{
+    cursor: pointer;
+}
+
+.entryCardInner {
+    border: 1px solid #c7c7c7;
+    border-radius: 10px;
+    margin: 1%;
+    padding:1%;
+}
+
+h3.entryCardTitle {
+    text-transform: capitalize;
+    font-size: 25px;
+}
+
+.entryCardRow {
+    margin-bottom: 15px;
+}
+
+.entryCardRowKey, .ownerCardRowKey {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #303030;
+}
+
+.ownerCard {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background: #ededed;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+
+
+.ownerCardImage img {
+    width: 100%;
+    max-width: 50px;
+    border-radius: 100%;
+    display: block;
+    margin:auto;
+}
+
+.ownerCardImage {
+    width: 20%;
+    overflow: hidden;
+}
+
+.ownerCardBody {
+    width: 80%;
+}
+
+@media only screen and (max-width: 800px) {
+    .entryCards{
+        display: block
+    }
+
+    .searchInner{
+        display: block 
+    }
+
+    .searchInner select, .searchInner input, .searchInner button{
+        width: 100%;
+    }
+}
