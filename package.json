@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "webpack-dev-server --open",
     "build": "webpack --watch",
-    "start": "nodemon ./server.js",
+    "start": "node ./server.js",
     "lint": "eslint . --ext .ts",
     "test": "jest"
   },

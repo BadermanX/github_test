@@ -1,7 +1,7 @@
-import React, {ReactElement} from 'react';
+import React, { ReactElement } from 'react';
 import { DisplayedSearchesInterface } from '../types';
- 
-export default ({searches, deleteCallback = null, editCallback = null}: DisplayedSearchesInterface) => {
+
+export default ({ searches, deleteCallback = null, editCallback = null }: DisplayedSearchesInterface) => {
     let searchBox: ReactElement[] = []
     searches.map((search, i) => {
         //value to string
@@ -20,29 +20,29 @@ export default ({searches, deleteCallback = null, editCallback = null}: Displaye
                         </span>
 
                         {editCallback ? (
-                           <i 
-                                role="searchEditButton" 
+                            <i
+                                role="searchEditButton"
                                 className="fas fa-edit"
-                                onClick={()=>{
+                                onClick={() => {
                                     editCallback(i)
                                 }}
-                           ></i>
-                        ) :(
+                            ></i>
+                        ) : (
                             null
                         )}
 
                         {deleteCallback ? (
-                           <i 
-                                role="searchEditButton" 
+                            <i
+                                role="searchEditButton"
                                 className="fas fa-trash-alt"
-                                onClick={()=>{
+                                onClick={() => {
                                     deleteCallback(i)
                                 }}
-                           ></i>
-                        ) :(
+                            ></i>
+                        ) : (
                             null
                         )}
-                       
+
                     </span>
                 </span>
             </div>
