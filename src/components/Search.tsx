@@ -1,14 +1,17 @@
-import React, { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { RenderEntryInterface, OwnerInterface, RenderCardInterface, RenderEntriesInterface } from "../types"
+import React, { useEffect, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import SearchBar from "../partials/SearchBar"
 import RenderEntryDetails from "../partials/RenderEntryDetails"
+import {
+    RenderEntryInterface,
+    OwnerInterface,
+    RenderCardInterface,
+    RenderEntriesInterface
+} from "../types"
 
 const OwnerCard = ({ owner }: { owner: OwnerInterface }) => {
     return (
-        <div
-            className='ownerCard'
-        >
+        <div className='ownerCard'>
             <div className='ownerCardImage'>
                 <img src={owner.avatar_url} />
             </div>

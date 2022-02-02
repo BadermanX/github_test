@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
-import RenderEntryDetails from '../partials/RenderEntryDetails';
+import React, { useEffect, useState } from 'react'
+import { useParams } from 'react-router-dom'
+import RenderEntryDetails from '../partials/RenderEntryDetails'
 
 export const Repo = () => {
     const { id } = useParams();
@@ -14,7 +14,7 @@ export const Repo = () => {
         const requestOptions = {
             method: 'GET',
             headers: header
-        };
+        }
 
         fetch(`/api/repo/${id}`, requestOptions)
             .then(response => response.json())

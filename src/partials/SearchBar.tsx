@@ -1,31 +1,11 @@
-import React, { useState, useEffect, ChangeEvent } from 'react';
-import DisplayedSearches from "./DisplayedSearches"
+import React, { useState, useEffect, ChangeEvent } from 'react'
 import Button from "./Button"
-import { SearchItemInterface, SearchBarInterface } from '../types';
+import { SearchItemInterface, SearchBarInterface } from '../types'
 
 export default ({ fieldsToDisplay, filters, setFilter }: SearchBarInterface) => {
 
     const [currentFilterIndex, setCurrentFilterIndex] = useState(filters.length)
     const [currentFilter, setCurrentFilter] = useState(filters)
-
-    let operators = [
-        {
-            name: "Greater Than",
-            value: ">"
-        },
-        {
-            name: "Less Than",
-            value: "<"
-        },
-        {
-            name: "Is",
-            value: "="
-        },
-        {
-            name: "Contains",
-            value: "contains"
-        }
-    ]
 
     const getCurrentSearch = (currentFilter: SearchItemInterface[]) => {
         let newSearch = [...currentFilter]

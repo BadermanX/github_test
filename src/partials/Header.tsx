@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from "react"
 import Section from "./Section"
 import Banner from "./Banner"
 
@@ -13,7 +13,6 @@ export default () => {
                 <Banner
                     title="Search GitHub"
                     body=""
-
                 />
             </Section>
         </div>

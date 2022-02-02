@@ -1,5 +1,5 @@
-import React, { ReactElement } from 'react';
-import { DisplayedSearchesInterface } from '../types';
+import React, { ReactElement } from 'react'
+import { DisplayedSearchesInterface } from '../types'
 
 export default ({ searches, deleteCallback = null, editCallback = null }: DisplayedSearchesInterface) => {
     let searchBox: ReactElement[] = []

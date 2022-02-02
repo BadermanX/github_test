@@ -1,4 +1,4 @@
-import React, { ReactElement } from 'react';
+import React, { ReactElement } from 'react'
 import { RenderEntryCardInterface } from "../types"
 
 export default ({ entry, fieldsToDisplay }: RenderEntryCardInterface) => {

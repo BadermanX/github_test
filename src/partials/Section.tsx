@@ -1,5 +1,5 @@
-import * as React from 'react';
-import { SectionInterface } from '../types';
+import * as React from 'react'
+import { SectionInterface } from '../types'
 
 export default ({ backgroundColor = "", backgroundImage, children, className = "" }: SectionInterface) => {
     return (
